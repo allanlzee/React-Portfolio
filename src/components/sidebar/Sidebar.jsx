@@ -11,9 +11,17 @@ class Sidebar extends React.Component {
         </div>
 
         <div className="contact-info">
-            <p className="name">Allan Zhou</p> 
-            <p className="email">allanlinzhou@gmail.com</p>
-            <p className="social">@allanlzee</p>
+          <p className="name">Allan Zhou</p>
+          <p className="email">allanlinzhou@gmail.com</p>
+          <p className="social">@allanlzee</p>
+        </div>
+
+        <div className="navigation">
+          <p className="introduction nav-link">Introduction</p>
+          <p className="resume nav-link">Resume</p>
+          <p className="projects nav-link">Projects</p>
+          <p className="violin nav-link">Violin</p>
+          <p className="footer nav-link">Contact</p>
         </div>
       </div>
     );

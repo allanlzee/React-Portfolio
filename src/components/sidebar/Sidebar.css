@@ -7,6 +7,7 @@
     height: 100vh; 
     padding: 10px; 
     min-width: 175px;
+    max-width: 300px; 
     overflow: hidden; 
 }
 
@@ -19,7 +20,27 @@
 }
 
 .contact-info {
-    font-weight: bold;
     font-size: 14px; 
-    margin: 0.6em; 
+    margin: 0.75em; 
+}
+
+.name {
+    font-weight: bold; 
+}
+
+.email {
+    color: #f0f8ff; 
+}
+
+.social {
+    color: #f0f8ff; 
+}
+
+.navigation {
+    margin: 0.75em; 
+    margin-top: 1.5em; 
+}
+
+.nav-link {
+    margin-top: 0.5em; 
 }
