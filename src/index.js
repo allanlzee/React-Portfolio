@@ -3,12 +3,24 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Sidebar from './components/sidebar/Sidebar'; 
-import Headeer from './components/header/Header'; 
+import Header from './components/header/Header';
+
+const TITLE = "@allanlzee";
+
+class Document extends React.Component {
+  componentDidMount() {
+    document.title = TITLE;
+  }
+    
+  render() {
+    return null; 
+  }
+}
 
 ReactDOM.render(
   <React.StrictMode>
+    <Document /> 
     <Sidebar />
-    
     
   </React.StrictMode>,
   document.getElementById('root')
