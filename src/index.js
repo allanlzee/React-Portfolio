@@ -1,9 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
-import Sidebar from './components/sidebar/Sidebar'; 
-import Header from './components/header/Header';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
+import Sidebar from "./components/sidebar/Sidebar";
+import Header from "./components/header/Header";
 
 const TITLE = "@allanlzee";
 
@@ -11,19 +11,21 @@ class Document extends React.Component {
   componentDidMount() {
     document.title = TITLE;
   }
-    
+
   render() {
-    return null; 
+    return null;
   }
 }
 
 ReactDOM.render(
   <React.StrictMode>
-    <Document /> 
-    <Sidebar />
-    
+    <Document />
+    <div className="react-body">
+      <Sidebar />
+      <Header />
+    </div>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
