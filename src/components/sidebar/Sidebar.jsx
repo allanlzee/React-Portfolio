@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./Sidebar.css";
 import Logo from "./images/Logo.png";
+import MenuIcon from "@material-ui/icons/Menu";
+import SidebarOption from './SidebarOption'; 
 
 class Sidebar extends React.Component {
   render() {
@@ -8,6 +10,7 @@ class Sidebar extends React.Component {
       <div className="sidebar">
         <div className="logo">
           <img className="profile-img" src={Logo} alt="profile" />
+
         </div>
 
         <div className="contact-info">
@@ -16,6 +19,8 @@ class Sidebar extends React.Component {
           <p className="social">@allanlzee</p>
         </div>
 
+        <br></br> 
+
         <div className="navigation">
           <p className="introduction nav-link">Introduction</p>
           <p className="resume nav-link">Resume</p>
@@ -23,9 +28,12 @@ class Sidebar extends React.Component {
           <p className="violin nav-link">Violin</p>
           <p className="footer nav-link">Contact</p>
         </div>
+
       </div>
     );
   }
 }
 
 export default Sidebar;
+
+// <SidebarOption className="menu-icon" Icon={MenuIcon} title="Menu" /> 

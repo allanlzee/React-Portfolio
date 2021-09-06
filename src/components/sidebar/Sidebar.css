@@ -6,21 +6,27 @@
     color: white; 
     height: 100vh; 
     padding: 10px; 
-    min-width: 175px;
-    max-width: 300px; 
+    min-width: 225px;
+    max-width: 275px; 
     overflow: hidden; 
 }
 
+.logo {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+}
+
 .profile-img {
-    height: 80px; 
-    width: 80px; 
+    height: 100px; 
+    width: 100px; 
     border-radius: 50%;
     margin: 0.5em; 
-    margin-top: 1.0em; 
+    margin-top: 2.0em; 
 }
 
 .contact-info {
-    font-size: 14px; 
+    font-size: 16px; 
     margin: 0.75em; 
 }
 
@@ -37,10 +43,14 @@
 }
 
 .navigation {
-    margin: 0.75em; 
     margin-top: 1.5em; 
+    margin: 0.75em; 
 }
 
 .nav-link {
-    margin-top: 0.5em; 
+    margin-top: 1.5em; 
+}
+
+#introduction {
+    margin-top: 4em; 
 }

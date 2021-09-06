@@ -2,11 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Sidebar from './components/sidebar/Sidebar'
+import Sidebar from './components/sidebar/Sidebar'; 
+import Headeer from './components/header/Header'; 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Sidebar /> 
+    <Sidebar />
+    
+    
   </React.StrictMode>,
   document.getElementById('root')
 );
