@@ -1,5 +1,5 @@
 .welcome-grid {
-  background: #bc11f0;
+  background: #0a75ad;
 }
 
 .header-logo {
@@ -8,6 +8,7 @@
   width: 85vw;
   min-width: 500px;
   overflow: hidden;
+  margin-top: 6em; 
 }
 
 @media (min-width: 1400px) {
@@ -24,7 +25,7 @@
 
 .welcome-title {
   color: white;
-  font-size: 4vw;
+  font-size: 5vw;
 }
 
 .welcome-subtitle {
@@ -43,13 +44,17 @@
   font-weight: 1;
 }
 
+.welcome-title span {
+  display: block;
+}
+
 @media (min-width: 740px) {
   .welcome-grid {
+    background: linear-gradient(60deg, #fe0256, #0104af);
     display: grid;
     width: 100%;
     margin: 0 auto;
-    margin-bottom: 10em;
-    margin-top: 10em;
+    margin-bottom: 10em; /* remove this if necessary */ 
     grid-column-gap: 1em;
     grid-template-areas:
       "img title"
@@ -58,11 +63,17 @@
     justify-content: center;
   }
 
+  .welcome-title {
+    font-size: 3.5vw;
+    margin-left: 0.5em; 
+  }
+
   .header-logo-img {
     grid-area: img;
-    min-width: 330px;
+    min-width: 300px;
     position: relative;
     z-index: 3;
+    width: 50vw; 
   }
 
   .welcome-subtitle {
@@ -77,6 +88,22 @@
   }
 }
 
-.welcome-title span {
+.header-waves-opacity {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.header-waves-opacity svg {
+  position: relative;
   display: block;
+  width: calc(100% + 1.3px);
+  height: 80px;
+}
+
+.header-waves-opacity .shape-fill {
+  fill: #19c2c2;
 }
