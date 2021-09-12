@@ -8,10 +8,10 @@
   width: 85vw;
   min-width: 500px;
   overflow: hidden;
-  margin-top: 6em; 
+  margin-top: 8em; 
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1000px) {
   .header-logo {
     width: 90vw;
   }
@@ -19,8 +19,8 @@
 
 .header-logo-img {
   width: 50vw;
-  margin-top: 2em;
-  box-shadow: 0.4em 0.4em 0.85em rgba(0, 0, 0, 0.25);
+  margin-top: 0.5em;
+  box-shadow: 0.4em 0.4em 0.7em rgba(0, 0, 0, 0.25);
 }
 
 .welcome-title {
@@ -48,11 +48,38 @@
   display: block;
 }
 
+.header-waves-opacity {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% + 150px); 
+  overflow: hidden;
+  line-height: 0;
+}
+
+.header-waves-opacity svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 80px;
+  overflow: hidden; 
+}
+
+.header-waves-opacity .shape-fill {
+  fill: #19c2c2;
+}
+
+@media (max-width: 600px) {
+  .header-waves-opacity {
+    width: calc(120% + 120px); 
+  }
+}
+
 @media (min-width: 740px) {
   .welcome-grid {
     background: linear-gradient(60deg, #fe0256, #0104af);
     display: grid;
-    width: 100%;
+    width: 120%;
     margin: 0 auto;
     margin-bottom: 10em; /* remove this if necessary */ 
     grid-column-gap: 1em;
@@ -65,7 +92,7 @@
 
   .welcome-title {
     font-size: 3.5vw;
-    margin-left: 0.5em; 
+    margin-left: 0.25em; 
   }
 
   .header-logo-img {
@@ -77,7 +104,7 @@
   }
 
   .welcome-subtitle {
-    font-size: 2.5vw;
+    font-size: 2.25vw;
     color: white;
     align-self: start;
     grid-column: -1 / 1;
@@ -86,24 +113,15 @@
     position: relative;
     left: 0.75em;
   }
+
+  .header-waves-opacity {
+    width: calc(100% + 120px); 
+  }
 }
 
-.header-waves-opacity {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
+@media (min-width: 1000px) {
+  .header-waves-opacity {
+    width: calc(100% + 107px); 
+  }
 }
 
-.header-waves-opacity svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 80px;
-}
-
-.header-waves-opacity .shape-fill {
-  fill: #19c2c2;
-}

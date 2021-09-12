@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./Sidebar.css";
 import Logo from "./images/Logo.png";
 import MenuIcon from "@material-ui/icons/Menu";
-import SidebarOption from './SidebarOption'; 
+import SidebarOption from "./SidebarOption";
 
 class Sidebar extends React.Component {
   render() {
@@ -10,7 +10,6 @@ class Sidebar extends React.Component {
       <div className="sidebar">
         <div className="logo">
           <img className="profile-img" src={Logo} alt="profile" />
-
         </div>
 
         <div className="contact-info">
@@ -19,16 +18,50 @@ class Sidebar extends React.Component {
           <p className="social">@allanlzee</p>
         </div>
 
-        <br></br> 
+        <br></br>
 
         <div className="navigation">
-          <p className="introduction nav-link">Introduction</p>
-          <p className="resume nav-link">Resume</p>
-          <p className="projects nav-link">Projects</p>
-          <p className="violin nav-link">Violin</p>
-          <p className="footer nav-link">Contact</p>
+          <a className="introduction nav-link" href="">
+            Introduction
+          </a>{" "}
+          <br></br>
+          <br></br>
+          <a
+            className="resume nav-link"
+            href="https://allanlzee.github.io/Portfolio/#AboutMe"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Resume
+          </a>{" "}
+          <br></br> <br></br>
+          <a
+            className="projects nav-link"
+            href="https://allanlzee.github.io/Portfolio/#Projects"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Projects
+          </a>{" "}
+          <br></br> <br></br>
+          <a
+            className="violin nav-link"
+            href="https://allanlzee.github.io/Portfolio/#Violin"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Violin
+          </a>{" "}
+          <br></br> <br></br>
+          <a
+            className="footer nav-link"
+            href="https://allanlzee.github.io/Portfolio/#Footer"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Contact
+          </a>
         </div>
-
       </div>
     );
   }
@@ -36,4 +69,4 @@ class Sidebar extends React.Component {
 
 export default Sidebar;
 
-// <SidebarOption className="menu-icon" Icon={MenuIcon} title="Menu" /> 
+// <SidebarOption className="menu-icon" Icon={MenuIcon} title="Menu" />
