@@ -12,7 +12,21 @@ code {
     monospace;
 }
 
+.react-sidebar {
+  display: inline-block; 
+  position: absolute; 
+}
+
 .react-body {
-  display: flex; 
-  justify-content: flex-start;
+  padding-left: 30vw; 
+}
+
+.header {
+  max-width: 100%; 
+  overflow-x: hidden;
+  background-color: #ccfffc;
+}
+
+.typing-animation {
+  background-color: #d3ffce;
 }

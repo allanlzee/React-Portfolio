@@ -24,7 +24,7 @@
 }
 
 .welcome-title {
-  color: white;
+  color: rgb(30, 30, 30);
   font-size: 5vw;
 }
 
@@ -78,7 +78,7 @@
 
 @media (min-width: 740px) {
   .welcome-grid {
-    background: linear-gradient(60deg, #fe0256, #0104af);
+    background: #ccfffc;
     display: grid;
     width: 120%;
     margin: 0 auto;

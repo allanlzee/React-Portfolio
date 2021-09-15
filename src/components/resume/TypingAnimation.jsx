@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./TypingAnimation.css"; 
+import "./TypingAnimation.css";
 
 class TypingAnimation extends React.Component {
   render() {

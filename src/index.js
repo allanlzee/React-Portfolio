@@ -21,9 +21,12 @@ class Document extends React.Component {
 ReactDOM.render(
   <React.StrictMode>
     <Document />
+    <div className="react-sidebar">
+      <Sidebar className="sidebar" />
+    </div>
+
     <div className="react-body">
-      <Sidebar />
-      <Header />
+      <Header className="header"/>
       <TypingAnimation />
     </div>
   </React.StrictMode>,
