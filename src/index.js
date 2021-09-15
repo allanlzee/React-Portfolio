@@ -4,6 +4,7 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import Sidebar from "./components/sidebar/Sidebar";
 import Header from "./components/header/Header";
+import TypingAnimation from "./components/resume/TypingAnimation"; 
 
 const TITLE = "@allanlzee";
 
@@ -23,6 +24,7 @@ ReactDOM.render(
     <div className="react-body">
       <Sidebar />
       <Header />
+      <TypingAnimation />
     </div>
   </React.StrictMode>,
   document.getElementById("root")

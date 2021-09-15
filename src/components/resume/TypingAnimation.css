@@ -1,0 +1,215 @@
+:root {
+    --animation-speed: 3s; 
+    --animation-steps: 25; 
+    --animation-delay: 4s; 
+    --animation-delay-2: 7s; 
+    --animation-delay-3: 10s; 
+    --animation-delay-4: 13s; 
+    --animation-delay-5: 16s; 
+    --background-color-primary: #ccfffc; 
+}
+
+.typewriter-section {
+    font-family: "Source Code Pro", monospace;
+    place-content: center; 
+    text-align: center;
+    position: relative; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    background: var(--background-color-primary);
+}
+
+.about-me-grid {
+    display: grid; 
+    grid-column-gap: 2em; 
+}
+
+.typewriter-sentences {
+    text-align: center; 
+    margin: auto;
+    margin-bottom: 2em;  
+}
+
+.about-me-image {
+    height: 500px; 
+    width: 300px;
+    border-radius: 10%; 
+    grid-column-start: 2; 
+    grid-column-end: 3; 
+    grid-row-start: 2; 
+    grid-row-end: 3; 
+    margin: auto; 
+}
+
+@media (max-width: 900px) {
+    .about-me-image {
+        margin: auto;  
+        height: 65%; 
+        width: 30vw; 
+    }
+
+    .resume {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 750px) {
+    .about-me-image {
+        width: 32vw; 
+    }
+
+    .resume {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 650px) {
+    .about-me-grid {
+        display: flex; 
+    }
+
+    .about-me-image {
+        margin: auto; 
+        width: 0vw; 
+        height: 0vh; 
+    }
+
+    .resume {
+        margin-left: 1em; 
+        margin: auto; 
+        font-size: 14px; 
+    }
+}
+
+.resume {
+    grid-column-start: 3; 
+    grid-column-end: 4; 
+    grid-row-start: 2; 
+    grid-row-end: 3; 
+    text-align: left; 
+    margin: auto; 
+}
+
+.resume-heading {
+    font-size: 100%; 
+}
+
+.list-point {
+    font-size: 100%; 
+}
+
+.section-title-typewriter {
+    color: rgb(0, 60, 255);
+    text-align: center;
+    font-size: 2.75em;
+    margin-bottom: 1em; 
+    text-align: center; 
+}
+
+.typewriting-animation {
+    color: black;
+    font-weight: bold; 
+    position: relative; 
+    font-family: "Source Code Pro", monospace;
+    font-size: 20px;
+    position: relative; 
+    padding: 0.5em; 
+}
+
+.tops {
+    color: red; 
+}
+
+.violinist {
+    color: orange; 
+}
+
+.violinist::before {
+    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay-2) forwards; 
+}
+
+.violinist::after {
+    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay-2) forwards, 
+    blink 750ms steps(var(--animation-steps)) infinite; 
+}
+
+.basketball {
+    color: rgb(6, 199, 6); 
+}
+
+.basketball::before {
+    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay-3) forwards; 
+}
+
+.basketball::after {
+    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay-3) forwards, 
+    blink 750ms steps(var(--animation-steps)) infinite; 
+}
+
+.prog-lead {
+    color: rgb(0, 162, 255); 
+}
+
+.prog-lead::before {
+    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay-4) forwards; 
+}
+
+.prog-lead::after {
+    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay-4) forwards, 
+    blink 750ms steps(var(--animation-steps)) infinite; 
+}
+
+.aspire {
+    color: rgb(192, 2, 192); 
+}
+
+.aspire::before {
+    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay-5) forwards; 
+}
+
+.aspire::after {
+    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay-5) forwards, 
+    blink 750ms steps(var(--animation-steps)) infinite; 
+}
+
+.typewriting-animation::before, 
+.typewriting-animation::after {
+    position: absolute;
+    content: ''; 
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0; 
+}
+
+.typewriting-animation::before {
+    background: var(--background-color-primary);
+    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay) forwards; 
+}
+
+.typewriting-animation::after {
+    width: 0.125em; 
+    background: black;
+    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay) forwards, 
+    blink 750ms steps(var(--animation-steps)) infinite; 
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%; 
+    } 
+}
+
+@keyframes blink {
+    to {
+        background: transparent; 
+    }
+}
+
+@keyframes disappear {
+    to {
+        background: var(--background-color-primary);
+    }
+}

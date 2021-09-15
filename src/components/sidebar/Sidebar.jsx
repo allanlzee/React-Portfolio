@@ -61,6 +61,7 @@ class Sidebar extends React.Component {
           >
             Contact
           </a>
+          <br></br> <br></br>
         </div>
       </div>
     );
