@@ -6,7 +6,7 @@ import Profile from "./Manitou.png";
 class Header extends React.Component {
   render() {
     return (
-      <section className="welcome-grid">
+      <section className="welcome-grid-section">
         <link
           href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
           rel="stylesheet"

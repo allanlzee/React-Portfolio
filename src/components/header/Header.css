@@ -1,24 +1,18 @@
-.welcome-grid {
-  background: #0a75ad;
+.welcome-grid-section {
+  width: calc(100vw - 20px); 
+  background: #ccfffc;
 }
 
 .header-logo {
-  display: flex;
+  display: inline-block;
   justify-content: center;
   width: 85vw;
-  min-width: 500px;
-  overflow: hidden;
   margin-top: 8em; 
-}
-
-@media (min-width: 1000px) {
-  .header-logo {
-    width: 90vw;
-  }
+  margin-left: 200px; 
 }
 
 .header-logo-img {
-  width: 50vw;
+  width: 40vw;
   margin-top: 0.5em;
   box-shadow: 0.4em 0.4em 0.7em rgba(0, 0, 0, 0.25);
 }
@@ -31,6 +25,7 @@
 .welcome-subtitle {
   color: white; 
   font-size: 3vw;
+  width: 40vw; 
   background-color: #0de4e4;
   padding: 0.5em; 
 }
@@ -70,20 +65,20 @@
   fill: #19c2c2;
 }
 
-@media (max-width: 600px) {
+/* Small Screens */ 
+@media (max-width: 760px) {
   .header-waves-opacity {
     width: calc(120% + 120px); 
   }
 }
 
-@media (min-width: 740px) {
+/* Medium Screens */ 
+@media (min-width: 760px) {
   .welcome-grid {
     background: #ccfffc;
     display: grid;
-    width: 120%;
-    margin: 0 auto;
-    margin-left: 10em; 
-    margin-bottom: 10em; /* remove this if necessary */ 
+    width: 80vw;
+    margin-bottom: 5em; /* remove this if necessary */ 
     grid-column-gap: 1em;
     grid-template-areas:
       "img title"
@@ -94,15 +89,14 @@
 
   .welcome-title {
     font-size: 3.5vw;
-    margin-left: 0.25em; 
   }
 
   .header-logo-img {
     grid-area: img;
-    min-width: 300px;
+    min-width: 250px;
     position: relative;
     z-index: 3;
-    width: 50vw; 
+    width: 40vw; 
     max-width: 575px; 
   }
 
@@ -114,7 +108,7 @@
     grid-row: 2;
     text-align: right;
     position: relative;
-    left: 0.75em;
+    left: 7.5em;
   }
 
   .header-waves-opacity {
@@ -122,9 +116,13 @@
   }
 }
 
+/* Large Screens (Browsers) */ 
 @media (min-width: 1000px) {
   .header-waves-opacity {
     width: calc(100% + 107px); 
   }
-}
 
+  .header-logo {
+    width: 80vw;
+  }
+}

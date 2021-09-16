@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  max-width: 100%; 
 }
 
 code {
@@ -14,19 +15,23 @@ code {
 
 .react-sidebar {
   display: inline-block; 
-  position: absolute; 
+  position: fixed; 
+  z-index: 3;
 }
 
 .react-body {
-  padding-left: 30vw; 
+  padding-left: 1.5vw; 
+  background-color: #ccfffc;
+  overflow-x: hidden; 
 }
 
-.header {
-  max-width: 100%; 
-  overflow-x: hidden;
-  background-color: #ccfffc;
+@media (max-width: 800px) {
+  .react-body {
+    padding-left: 12vw; 
+  }
 }
 
 .typing-animation {
   background-color: #d3ffce;
+  margin-left: 2.5vw; 
 }

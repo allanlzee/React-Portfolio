@@ -4,7 +4,7 @@ import "./TypingAnimation.css";
 class TypingAnimation extends React.Component {
   render() {
     return (
-      <div>
+      <div className="typewriter-section">
         <h2 className="section-title-typewriter">About Me</h2>
 
         <div className="typewriter-sentences">
