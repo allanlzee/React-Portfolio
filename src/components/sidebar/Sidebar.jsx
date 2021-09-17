@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import "./Sidebar.css";
 import Logo from "./images/Logo.png";
-import MenuIcon from "@material-ui/icons/Menu";
-import SidebarOption from "./SidebarOption";
+import InstagramIcon from "@material-ui/icons/Instagram";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import WorkIcon from "@material-ui/icons/Work";
+import GitHubIcon from "@material-ui/icons/GitHub";
 
 class Sidebar extends React.Component {
   render() {
@@ -21,7 +23,7 @@ class Sidebar extends React.Component {
         <br></br>
 
         <div className="navigation">
-          <a className="introduction nav-link" href="">
+          <a className="introduction nav-link" href="#">
             Introduction
           </a>{" "}
           <br></br>
@@ -62,6 +64,27 @@ class Sidebar extends React.Component {
             Contact
           </a>
           <br></br> <br></br>
+        </div>
+
+        <div className="contact-icons">
+          <InstagramIcon
+            className="icon"
+            onClick={(event) =>
+              (window.location.href = "https://www.instagram.com/allanlzee/")
+            }
+          />
+          <LinkedInIcon
+            className="icon"
+            onClick={(event) =>
+              (window.location.href = "https://www.smartr.me/profile")
+            }
+          />
+          <GitHubIcon
+            className="icon"
+            onClick={(event) =>
+              (window.location.href = "https://github.com/allanlzee")
+            }
+          />
         </div>
       </div>
     );

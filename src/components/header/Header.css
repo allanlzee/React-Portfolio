@@ -8,11 +8,11 @@
   justify-content: center;
   width: 85vw;
   margin-top: 8em; 
-  margin-left: 200px; 
+  margin-left: 35vw; 
 }
 
 .header-logo-img {
-  width: 40vw;
+  width: 42.5vw;
   margin-top: 0.5em;
   box-shadow: 0.4em 0.4em 0.7em rgba(0, 0, 0, 0.25);
 }
@@ -65,19 +65,12 @@
   fill: #19c2c2;
 }
 
-/* Small Screens */ 
-@media (max-width: 760px) {
-  .header-waves-opacity {
-    width: calc(120% + 120px); 
-  }
-}
-
 /* Medium Screens */ 
-@media (min-width: 760px) {
+@media (min-width: 800px) {
   .welcome-grid {
     background: #ccfffc;
     display: grid;
-    width: 80vw;
+    width: 60vw;
     margin-bottom: 5em; /* remove this if necessary */ 
     grid-column-gap: 1em;
     grid-template-areas:
@@ -124,5 +117,11 @@
 
   .header-logo {
     width: 80vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-logo {
+    margin-left: 40vw; 
   }
 }

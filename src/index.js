@@ -4,7 +4,8 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import Sidebar from "./components/sidebar/Sidebar";
 import Header from "./components/header/Header";
-import TypingAnimation from "./components/resume/TypingAnimation"; 
+import TypingAnimation from "./components/resume/TypingAnimation";
+import Resume from "./components/resume/Resume"; 
 
 const TITLE = "@allanlzee";
 
@@ -27,7 +28,8 @@ ReactDOM.render(
 
     <div className="react-body">
       <Header className="header"/>
-      <TypingAnimation className="typing-animation"/>
+      <TypingAnimation className="typing-animation" />
+      <Resume className="resume" /> 
     </div>
   </React.StrictMode>,
   document.getElementById("root")

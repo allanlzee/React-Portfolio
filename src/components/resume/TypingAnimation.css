@@ -18,10 +18,10 @@
     flex-direction: column;
     align-items: center;
     background: var(--background-color-primary);
-    margin-left: 15vw; 
+    margin-left: 12vw; 
     font-size: 1.5vw; 
+    margin-top: 2vh; 
 }
-
 
 .about-me-grid {
     display: grid; 
@@ -34,16 +34,6 @@
     margin-bottom: 2em;  
 }
 
-@media (max-width: 800px) {
-    .typewriter-sentences {
-        font-size: 0.75vw;
-    }
-
-    .typewriter-section {
-        margin-left: 36vw; 
-    }
-}
-
 .about-me-image {
     height: 500px; 
     width: 300px;
@@ -53,47 +43,6 @@
     grid-row-start: 2; 
     grid-row-end: 3; 
     margin: auto; 
-}
-
-@media (max-width: 900px) {
-    .about-me-image {
-        margin: auto;  
-        height: 65%; 
-        width: 30vw; 
-    }
-
-    .resume {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 750px) {
-    .about-me-image {
-        width: 32vw; 
-    }
-
-    .resume {
-        font-size: 12px;
-    }
-
-}
-
-@media (max-width: 650px) {
-    .about-me-grid {
-        display: flex; 
-    }
-
-    .about-me-image {
-        margin: auto; 
-        width: 0vw; 
-        height: 0vh; 
-    }
-
-    .resume {
-        margin-left: 1em; 
-        margin: auto; 
-        font-size: 14px; 
-    }
 }
 
 .resume {
@@ -116,7 +65,7 @@
 .section-title-typewriter {
     color: rgb(0, 60, 255);
     text-align: center;
-    font-size: 2.75em;
+    font-size: 2.75vh;
     margin-bottom: 1em; 
     text-align: center; 
 }
@@ -124,7 +73,7 @@
 .typewriting-animation {
     color: black;
     font-weight: bold; 
-    position: relative; 
+    position: relative;
     font-family: "Source Code Pro", monospace;
     font-size: 20px;
     position: relative; 
@@ -207,6 +156,65 @@
     background: black;
     animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay) forwards, 
     blink 750ms steps(var(--animation-steps)) infinite; 
+}
+
+@media (max-width: 900px) {
+    .about-me-image {
+        margin: auto;  
+        height: 65%; 
+        width: 30vw; 
+    }
+
+    .resume {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 780px) {
+    .typewriter-sentences {
+        font-size: 0.75vw;
+    }
+
+    .typewriter-section {
+        margin-left: 30vw; 
+    }
+}
+
+@media (max-width: 750px) {
+    .about-me-image {
+        width: 30vw; 
+    }
+
+    .resume {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 650px) {
+    .about-me-grid {
+        display: flex; 
+    }
+
+    .about-me-image {
+        margin: auto; 
+        width: 0vw; 
+        height: 0vh; 
+    }
+
+    .resume {
+        margin-left: 1em; 
+        margin: auto; 
+        font-size: 14px; 
+    }
+
+    .typewriter-section p {
+        font-size: 2.5vw; 
+        margin-left: 1.0em; 
+    }
+
+    .section-title-typewriter {
+        margin-left: 1.0em; 
+    }
 }
 
 @keyframes typewriter {

@@ -7,7 +7,7 @@
     height: 100vh; 
     padding: 10px; 
     min-width: 225px;
-    max-width: 275px; 
+    max-width: 255px; 
     overflow: scroll; 
     position: fixed; 
 }
@@ -48,7 +48,7 @@
 
 .navigation {
     margin-top: 1.5em; 
-    margin: 0.75em; 
+    margin-left: 0.75em; 
     display: block; 
 }
 
@@ -60,4 +60,16 @@
 
 #introduction {
     margin-top: 4em; 
+}
+
+.contact-icons {
+    display: flex; 
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0.6em; 
+}
+
+.icon {
+    padding-top: 0.75em;
+    padding-right: 0.75em; 
 }
