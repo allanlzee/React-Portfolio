@@ -1,6 +1,6 @@
 .welcome-grid-section {
   width: calc(100vw - 20px); 
-  background: #ccfffc;
+  background-color: #ccfffc;
 }
 
 .header-logo {
@@ -68,7 +68,6 @@
 /* Medium Screens */ 
 @media (min-width: 800px) {
   .welcome-grid {
-    background: #ccfffc;
     display: grid;
     width: 60vw;
     margin-bottom: 5em; /* remove this if necessary */ 

@@ -10,6 +10,7 @@
 }
 
 .typewriter-section {
+    background: var(--background-color-primary);
     font-family: "Source Code Pro", monospace;
     place-content: center; 
     text-align: center;
@@ -17,41 +18,14 @@
     display: flex; 
     flex-direction: column;
     align-items: center;
-    background: var(--background-color-primary);
     margin-left: 12vw; 
-    font-size: 1.5vw; 
-    margin-top: 2vh; 
-}
-
-.about-me-grid {
-    display: grid; 
-    grid-column-gap: 2em; 
+    font-size: 1.5vw;   
 }
 
 .typewriter-sentences {
     text-align: center; 
     margin: auto;
     margin-bottom: 2em;  
-}
-
-.about-me-image {
-    height: 500px; 
-    width: 300px;
-    border-radius: 10%; 
-    grid-column-start: 2; 
-    grid-column-end: 3; 
-    grid-row-start: 2; 
-    grid-row-end: 3; 
-    margin: auto; 
-}
-
-.resume {
-    grid-column-start: 3; 
-    grid-column-end: 4; 
-    grid-row-start: 2; 
-    grid-row-end: 3; 
-    text-align: left; 
-    margin: auto; 
 }
 
 .resume-heading {
@@ -63,10 +37,11 @@
 }
 
 .section-title-typewriter {
-    color: rgb(0, 60, 255);
+    color: rgb(1, 111, 255);
     text-align: center;
     font-size: 30px;
     margin-bottom: 1em; 
+    margin-top: 2em;
     text-align: center; 
 }
 
@@ -159,12 +134,6 @@
 }
 
 @media (max-width: 900px) {
-    .about-me-image {
-        margin: auto;  
-        height: 65%; 
-        width: 30vw; 
-    }
-
     .resume {
         font-size: 14px;
     }

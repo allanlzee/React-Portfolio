@@ -27,9 +27,9 @@ ReactDOM.render(
     </div>
 
     <div className="react-body">
-      <Header className="header"/>
-      <TypingAnimation className="typing-animation" />
-      <Resume className="resume" /> 
+      <Header className="react-header"/>
+      <TypingAnimation className="react-typing-animation" />
+      <Resume className="react-resume" /> 
     </div>
   </React.StrictMode>,
   document.getElementById("root")
