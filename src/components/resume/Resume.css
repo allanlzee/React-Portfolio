@@ -6,11 +6,32 @@
 
 .resume-title {
     color: rgb(231, 18, 18); 
-    font-size: 2.75vh;
+    font-size: 30px;
 }
 
 .list-point {
     padding: 1em; 
+    font-family: "Source Code Pro", monospace;
+}
+
+.resume-heading {
+    font-size: 20px; 
+}
+
+.work {
+    color:rgb(19, 179, 228);
+}
+
+.leadership {
+    color:rgb(35, 180, 67);
+}
+
+.volunteer {
+    color:rgb(216, 119, 29);
+}
+
+.title {
+    font-weight: 600; 
 }
 
 @media (min-width: 800px) {
