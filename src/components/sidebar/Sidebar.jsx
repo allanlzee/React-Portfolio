@@ -3,15 +3,44 @@ import "./Sidebar.css";
 import Logo from "./images/Logo.png";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import WorkIcon from "@material-ui/icons/Work";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import MenuIcon from "@material-ui/icons/Menu";
 
 class Sidebar extends React.Component {
+  constructor() {
+    super();
+
+    this.state = {
+      open: true,
+    }
+  }
+
+  /* Incomplete */ 
+  toggleSidebar() {
+    this.setState({
+      open: !this.state.open
+    });
+    console.log(this.state.open);
+    
+    if (this.state.open) {
+
+    } else {
+      
+    }
+  }
+  /******************/
+
   render() {
     return (
-      <div className="sidebar">
+      <div className="sidebar" width={this.state.open}>
         <div className="logo">
           <img className="profile-img" src={Logo} alt="profile" />
+
+          <MenuIcon
+            className="menu-icon"
+            onClick={(event) => {
+              this.toggleSidebar();
+            }}/>
         </div>
 
         <div className="contact-info">
