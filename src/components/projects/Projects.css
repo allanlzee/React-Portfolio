@@ -34,6 +34,24 @@
   grid-row-end: 3;
 }
 
+.project-pictures {
+    margin-right: auto;
+    margin-left: auto; 
+    margin-top: 1em; 
+    margin-bottom: 2em;
+    width: 70%; 
+    height: 40%; 
+}
+
+.coding-projects {
+  color: rgb(21, 11, 155);
+}
+
+.coding-projects:hover {
+  background: white;
+  animation: scale 200ms ease-in-out forwards; 
+}
+
 @keyframes scale {
   to {
     transform: scale(1.05); 
