@@ -69,3 +69,51 @@
     transform: scale(1.05); 
   }
 }
+
+@media (max-width: 800px) {
+  .coding-project-grid {
+    width: calc(100vw - 600px); 
+  }
+
+  .android-development {
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    grid-row-start: 1; 
+    grid-row-end: 2; 
+  }
+
+  .python {
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    grid-row-start: 2; 
+    grid-row-end: 3;
+  }
+
+  .front-end-development {
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    grid-row-start: 3; 
+    grid-row-end: 4;
+  }
+
+  .api-projects {
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    grid-row-start: 4; 
+    grid-row-end: 5; 
+  }
+
+  .react {
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    grid-row-start: 5; 
+    grid-row-end: 6; 
+  }
+
+  .flutter {
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    grid-row-start: 6; 
+    grid-row-end: 7; 
+  }
+}
