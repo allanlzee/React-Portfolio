@@ -5,6 +5,7 @@ import Python from "./Images/computer-vision.png";
 import API from "./Images/discord-bot.png";
 import Front_End from "./Images/portfolio-project.png";
 import Front_End_React from "./Images/front-end-react.png"; 
+import Dart_Programming from "./Images/dart-programming.png"; 
 
 class Projects extends React.Component {
     render() { 
@@ -76,6 +77,20 @@ class Projects extends React.Component {
                   className="project-pictures"
                   alt="discord bot"
                 />
+              </a>
+            </div>
+
+            <div classname="flutter coding-projects">
+              <b>Flutter using Dart</b>
+              <a 
+                href="https://github.com/allanlzee/Flutter-Scheduler"
+                className="coding-projects">
+
+                <img
+                  src={Dart_Programming}
+                  className="project-pictures"
+                  alt="flutter-dart" /> 
+
               </a>
             </div>
           </div>
