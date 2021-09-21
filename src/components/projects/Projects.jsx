@@ -1,16 +1,24 @@
 import React, { Component } from 'react';
-import "./Projects.css"; 
+import "./Projects.css";
+import Android from "./Images/android-studio.png";
+import Python from "./Images/computer-vision.png";
+import API from "./Images/discord-bot.png";
+import Front_End from "./Images/portfolio-project.png";
+import Front_End_React from "./Images/front-end-react.png"; 
 
 class Projects extends React.Component {
     render() { 
-        return (
+      return (
+        <section>
+          <h2 className="coding-projects-title">Coding Projects</h2>
+
           <div className="coding-project-grid">
             <div className="android-development coding-projects">
               <b>Java Android App Development</b>
 
               <a href="https://github.com/allanlzee/AzTech-Personal">
                 <img
-                  src="Project-Pictures/android-studio.png"
+                  src={Android}
                   className="project-pictures"
                   alt="Android Studio"
                 />
@@ -25,7 +33,7 @@ class Projects extends React.Component {
                 className="coding-projects"
               >
                 <img
-                  src="Project-Pictures/computer-vision.png"
+                  src={Python}
                   className="project-pictures"
                   alt="Python Computer Vision using OpenCV"
                 />
@@ -33,14 +41,14 @@ class Projects extends React.Component {
             </div>
 
             <div className="front-end-development coding-projects">
-              <b>Front End Development</b>
+              <b>HTML & CSS Development</b>
 
               <a
                 href="https://github.com/allanlzee/Portfolio-Revised"
                 className="coding-projects"
               >
                 <img
-                  src="Project-Pictures/react-front-end.png"
+                  src={Front_End}
                   className="project-pictures"
                   alt="Front-End Development"
                 />
@@ -49,20 +57,30 @@ class Projects extends React.Component {
 
             <div className="api-projects coding-projects">
               <b>API Projects</b>
-
               <a
                 href="https://github.com/allanlzee/Discord-Bot"
                 className="coding-projects"
               >
+                <img src={API} className="project-pictures" alt="discord bot" />
+              </a>
+            </div>
+
+            <div className="react coding-projects">
+              <b>React JS Development</b>
+              <a
+                href="https://github.com/allanlzee/React-Portfolio"
+                className="coding-projects"
+              >
                 <img
-                  src="Project-Pictures/discord-bot.png"
+                  src={Front_End_React}
                   className="project-pictures"
                   alt="discord bot"
                 />
               </a>
             </div>
           </div>
-        );
+        </section>
+      );
     }
 }
  

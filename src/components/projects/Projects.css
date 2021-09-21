@@ -1,9 +1,12 @@
 .coding-project-grid {
+  width: calc(100vw - 400px); 
   display: grid; 
   grid-column-gap: 50px; 
   grid-row-gap: 50px; 
   font-size: 20px; 
   margin-bottom: 2.5em; 
+  margin-left: 20vw; 
+  text-align: center;
 }
 
 .android-development {
@@ -39,17 +42,26 @@
     margin-left: auto; 
     margin-top: 1em; 
     margin-bottom: 2em;
-    width: 70%; 
-    height: 40%; 
+    width: 24.375vw; 
+    height: 15vw; 
 }
 
 .coding-projects {
   color: rgb(21, 11, 155);
+  padding: 1em; 
 }
 
 .coding-projects:hover {
   background: white;
   animation: scale 200ms ease-in-out forwards; 
+}
+
+.coding-projects-title {
+  font-size: 2.5vw;
+  color: blue;
+  text-align: center;
+  margin-left: 15vw;
+  margin-top: 1.50em;
 }
 
 @keyframes scale {

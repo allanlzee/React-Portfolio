@@ -119,6 +119,12 @@
   }
 }
 
+@media (min-width: 1600px) {
+  .header-logo {
+    margin-left: 25vw; 
+  }
+}
+
 @media (max-width: 600px) {
   .header-logo {
     margin-left: 40vw; 
