@@ -37,17 +37,31 @@
   grid-row-end: 3;
 }
 
+.react {
+  grid-column-start: 1; 
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.flutter {
+  grid-column-start: 2; 
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
 .project-pictures {
     margin-right: auto;
     margin-left: auto; 
     margin-top: 1em; 
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     width: 24.375vw; 
     height: 15vw; 
 }
 
 .coding-projects {
-  color: rgb(21, 11, 155);
+  color: #20a377;
   padding: 1em; 
 }
 
@@ -56,12 +70,20 @@
   animation: scale 200ms ease-in-out forwards; 
 }
 
+.row2 {
+  color:#8a2be2; 
+}
+
+.row3 {
+  color: #ffa500;
+}
+
 .coding-projects-title {
-  font-size: 2.5vw;
+  font-size: 2em;
   color: blue;
-  text-align: center;
-  margin-left: 15vw;
-  margin-top: 1.50em;
+  font-weight: bold;
+  margin-left: 14vw;
+  margin-top: 2.5em;
 }
 
 @keyframes scale {
@@ -70,9 +92,37 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .coding-project-grid {
-    width: calc(100vw - 600px); 
+    margin-left: 35vw;   
+  }
+
+  .coding-projects-title {
+    margin-left: calc(100vw - 200px); 
+  }
+
+  .project-pictures {
+    width: 35vw; 
+    height: 20vw; 
+  }
+}
+
+@media (max-width: 1200px) {
+  .coding-project-grid {
+    width: calc(100vw - 600px);
+    margin-left: 32vw;   
+  }
+
+  .coding-projects-title {
+    width: 300px;
+    font-size: 1.75em; 
+    position: relative; 
+    margin-left: calc(50vw - 70px); 
+  }
+
+  .project-pictures {
+    width: 35vw; 
+    height: 20vw; 
   }
 
   .android-development {
@@ -115,5 +165,12 @@
     grid-column-end: 2; 
     grid-row-start: 6; 
     grid-row-end: 7; 
+  }
+}
+
+@media (min-width: 1200px) {
+  .coding-projects-title {
+    text-align: center;
+    
   }
 }

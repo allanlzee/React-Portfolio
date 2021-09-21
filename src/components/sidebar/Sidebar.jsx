@@ -5,6 +5,7 @@ import InstagramIcon from "@material-ui/icons/Instagram";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import MenuIcon from "@material-ui/icons/Menu";
+import BuildIcon from "@material-ui/icons/Build";
 
 class Sidebar extends React.Component {
   constructor() {
@@ -40,7 +41,8 @@ class Sidebar extends React.Component {
             className="menu-icon"
             onClick={(event) => {
               this.toggleSidebar();
-            }}/>
+            }}
+          />
         </div>
 
         <div className="contact-info">
@@ -58,7 +60,7 @@ class Sidebar extends React.Component {
           <br></br>
           <br></br>
           <a
-            className="resume nav-link"
+            className="resume-sidebar nav-link"
             href="https://allanlzee.github.io/Portfolio/#AboutMe"
             target="_blank"
             rel="noreferrer"
@@ -99,19 +101,26 @@ class Sidebar extends React.Component {
           <InstagramIcon
             className="icon"
             onClick={(event) =>
-              (window.location.href = "https://www.instagram.com/allanlzee/")
+              window.open("https://www.instagram.com/allanlzee/", '_blank').focus()
             }
           />
           <LinkedInIcon
             className="icon"
             onClick={(event) =>
-              (window.location.href = "https://www.smartr.me/profile")
+              window.open("https://www.smartr.me/profile", '_blank').focus()
             }
           />
           <GitHubIcon
             className="icon"
             onClick={(event) =>
-              (window.location.href = "https://github.com/allanlzee")
+              window.open("https://github.com/allanlzee", '_blank').focus()
+            }
+          />
+
+          <BuildIcon
+            className="icon"
+            onClick={(event) =>
+              window.open("https://github.com/Arctos6135", '_blank').focus()
             }
           />
         </div>

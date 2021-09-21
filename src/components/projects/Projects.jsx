@@ -15,7 +15,7 @@ class Projects extends React.Component {
 
           <div className="coding-project-grid">
             <div className="android-development coding-projects">
-              <b>Java Android App Development</b>
+              <b className="row1">Java Android App Development</b>
 
               <a href="https://github.com/allanlzee/AzTech-Personal">
                 <img
@@ -27,7 +27,7 @@ class Projects extends React.Component {
             </div>
 
             <div className="python coding-projects">
-              <b>Python Computer Vision</b>
+              <b className="row1">Python Computer Vision</b>
 
               <a
                 href="https://github.com/allanlzee/Open-CV-Mediapipe"
@@ -42,7 +42,7 @@ class Projects extends React.Component {
             </div>
 
             <div className="front-end-development coding-projects">
-              <b>HTML & CSS Development</b>
+              <b className="row2">HTML & CSS Development</b>
 
               <a
                 href="https://github.com/allanlzee/Portfolio-Revised"
@@ -57,7 +57,7 @@ class Projects extends React.Component {
             </div>
 
             <div className="api-projects coding-projects">
-              <b>API Projects</b>
+              <b className="row2">API Projects</b>
               <a
                 href="https://github.com/allanlzee/Discord-Bot"
                 className="coding-projects"
@@ -67,7 +67,7 @@ class Projects extends React.Component {
             </div>
 
             <div className="react coding-projects">
-              <b>React JS Development</b>
+              <b className="row3">React JS Development</b>
               <a
                 href="https://github.com/allanlzee/React-Portfolio"
                 className="coding-projects"
@@ -75,22 +75,22 @@ class Projects extends React.Component {
                 <img
                   src={Front_End_React}
                   className="project-pictures"
-                  alt="discord bot"
+                  alt="front-end"
                 />
               </a>
             </div>
 
-            <div classname="flutter coding-projects">
-              <b>Flutter using Dart</b>
-              <a 
+            <div className="flutter coding-projects">
+              <b className="row3">Flutter with Dart</b>
+              <a
                 href="https://github.com/allanlzee/Flutter-Scheduler"
-                className="coding-projects">
-
+                className="coding-projects"
+              >
                 <img
                   src={Dart_Programming}
                   className="project-pictures"
-                  alt="flutter-dart" /> 
-
+                  alt="flutter dart"
+                />
               </a>
             </div>
           </div>
