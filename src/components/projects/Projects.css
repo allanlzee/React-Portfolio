@@ -110,14 +110,14 @@
 @media (max-width: 1200px) {
   .coding-project-grid {
     width: calc(100vw - 600px);
-    margin-left: 32vw;   
+    margin-left: 35vw;   
   }
 
   .coding-projects-title {
     width: 300px;
     font-size: 1.75em; 
     position: relative; 
-    margin-left: calc(50vw - 70px); 
+    margin-left: calc(50vw - 50px); 
   }
 
   .project-pictures {
@@ -171,6 +171,5 @@
 @media (min-width: 1200px) {
   .coding-projects-title {
     text-align: center;
-    
   }
 }

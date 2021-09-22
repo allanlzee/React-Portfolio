@@ -1,0 +1,33 @@
+.violin-section {
+    width: calc(100vw - 400px); 
+    display: grid; 
+    grid-column-gap: 50px; 
+    grid-row-gap: 50px; 
+    margin-bottom: 2.5em; 
+    margin-top: 2.5em; 
+    margin-left: 20vw; 
+    text-align: center;
+    font-size: 2.5em; 
+}
+
+@media (max-width: 1200px) {
+    .violin-section {
+        width: calc(100vw - 600px); 
+        margin-left: 32vw; 
+    }
+
+    .violin-section-title {
+        width: 300px; 
+        font-size: 1.75em;
+        position: relative; 
+        margin-left: calc(55vw - 400px); 
+        font-size: 2em; 
+    }
+}
+
+@media (max-width: 800px) {
+    .violin-section-title {
+        font-size: 1.75em; 
+        margin-left: 0.25vw; 
+    }
+}

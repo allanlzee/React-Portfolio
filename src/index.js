@@ -7,6 +7,7 @@ import Header from "./components/header/Header";
 import TypingAnimation from "./components/resume/TypingAnimation";
 import Resume from "./components/resume/Resume";
 import Projects from "./components/projects/Projects"
+import Violin from "./components/violin/Violin"; 
 
 const TITLE = "@allanlzee";
 
@@ -31,7 +32,8 @@ ReactDOM.render(
       <Header className="react-header"/>
       <TypingAnimation className="react-typing-animation" />
       <Resume className="react-resume" />
-      <Projects className="react-projects"/> 
+      <Projects className="react-projects" />
+      <Violin className="react-violin" /> 
     </div>
   </React.StrictMode>,
   document.getElementById("root")

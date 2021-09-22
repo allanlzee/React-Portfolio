@@ -54,7 +54,7 @@ class Sidebar extends React.Component {
         <br></br>
 
         <div className="navigation">
-          <a className="introduction nav-link" href="#">
+          <a className="introduction nav-link" href="https://allanlzee.github.io/Portfolio">
             Introduction
           </a>{" "}
           <br></br>
