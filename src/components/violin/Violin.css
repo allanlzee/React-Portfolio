@@ -7,7 +7,11 @@
     margin-top: 2.5em; 
     margin-left: 20vw; 
     text-align: center;
-    font-size: 2.5em; 
+    font-size: 1.5em; 
+}
+
+.violin-section-title {
+    color: rgb(33, 134, 216); 
 }
 
 @media (max-width: 1200px) {
@@ -18,7 +22,7 @@
 
     .violin-section-title {
         width: 300px; 
-        font-size: 1.75em;
+        font-size: 1.5em;
         position: relative; 
         margin-left: calc(55vw - 400px); 
         font-size: 2em; 
@@ -27,7 +31,7 @@
 
 @media (max-width: 800px) {
     .violin-section-title {
-        font-size: 1.75em; 
+        font-size: 1.5em; 
         margin-left: 0.25vw; 
     }
 }

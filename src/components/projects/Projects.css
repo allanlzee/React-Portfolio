@@ -9,6 +9,14 @@
   text-align: center;
 }
 
+.coding-projects-title {
+  font-size: 2em;
+  color: blue;
+  font-weight: bold;
+  margin-left: 12vw;
+  margin-top: 2.5em;
+}
+
 .android-development {
   grid-column-start: 1; 
   grid-column-end: 2; 
@@ -78,14 +86,6 @@
   color: #ffa500;
 }
 
-.coding-projects-title {
-  font-size: 2em;
-  color: blue;
-  font-weight: bold;
-  margin-left: 14vw;
-  margin-top: 2.5em;
-}
-
 @keyframes scale {
   to {
     transform: scale(1.05); 
@@ -110,7 +110,7 @@
 @media (max-width: 1200px) {
   .coding-project-grid {
     width: calc(100vw - 600px);
-    margin-left: 35vw;   
+    margin-left: 34vw;   
   }
 
   .coding-projects-title {
