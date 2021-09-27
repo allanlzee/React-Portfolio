@@ -37,12 +37,6 @@ class Sidebar extends React.Component {
         <div className="logo">
           <img className="profile-img" src={Logo} alt="profile" />
 
-          <MenuIcon
-            className="menu-icon"
-            onClick={(event) => {
-              this.toggleSidebar();
-            }}
-          />
         </div>
 
         <div className="contact-info">

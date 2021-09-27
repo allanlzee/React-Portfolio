@@ -5,7 +5,7 @@
   grid-row-gap: 50px; 
   font-size: 20px; 
   margin-bottom: 2.5em; 
-  margin-left: 20vw; 
+  margin-left: 24vw; 
   text-align: center;
 }
 
@@ -13,7 +13,7 @@
   font-size: 2em;
   color: blue;
   font-weight: bold;
-  margin-left: 12vw;
+  margin-left: 18vw;
   margin-top: 2.5em;
 }
 
@@ -92,32 +92,23 @@
   }
 }
 
-@media (max-width: 900px) {
-  .coding-project-grid {
-    margin-left: 35vw;   
-  }
-
+@media (min-width: 1050px) {
   .coding-projects-title {
-    margin-left: calc(100vw - 200px); 
-  }
-
-  .project-pictures {
-    width: 35vw; 
-    height: 20vw; 
+    text-align: center;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
   .coding-project-grid {
     width: calc(100vw - 600px);
-    margin-left: 34vw;   
+    margin-left: calc(30vw + 25px);   
   }
 
   .coding-projects-title {
     width: 300px;
     font-size: 1.75em; 
     position: relative; 
-    margin-left: calc(50vw - 50px); 
+    margin-left: calc(37.5vw + 27.5px); 
   }
 
   .project-pictures {
@@ -165,11 +156,5 @@
     grid-column-end: 2; 
     grid-row-start: 6; 
     grid-row-end: 7; 
-  }
-}
-
-@media (min-width: 1200px) {
-  .coding-projects-title {
-    text-align: center;
   }
 }

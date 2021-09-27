@@ -29,12 +29,13 @@ ReactDOM.render(
     </div>
 
     <div className="react-body">
-      <Header className="react-header"/>
+      <Header className="react-header" />
       <TypingAnimation className="react-typing-animation" />
       <Resume className="react-resume" />
       <Projects className="react-projects" />
-      <Violin className="react-violin" /> 
+      <Violin className="react-violin" />
     </div>
+
   </React.StrictMode>,
   document.getElementById("root")
 );

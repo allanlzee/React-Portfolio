@@ -11,7 +11,7 @@ class Resume extends React.Component {
               <b className="resume-heading work">Job Experience</b> <br></br>
               <p className="list-point">
                 <b className="title">A&W Team Member</b> <br></br>June 2021 -
-                September 2021
+                October 2021
               </p>
               <b className="resume-heading leadership">Leadership Experience</b>{" "}
               <br></br>
